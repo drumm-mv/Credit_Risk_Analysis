@@ -225,35 +225,33 @@ Employ different techniques to train and evaluate models with unbalanced classes
   <tbody>
     <tr>
       <th>Actual 0</th>
-      <td>71</td>
-      <td>30</td>
+      <td>93</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>Actual 1</th>
-      <td>2153</td>
-      <td>14951</td>
+      <td>983</td>
+      <td>16121</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-    Accuracy Score : 0.7885466545953005
+    Accuracy Score : 0.9316600714093861
     Classification Report
                        pre       rec       spe        f1       geo       iba       sup
     
-      high_risk       0.03      0.70      0.87      0.06      0.78      0.60       101
-       low_risk       1.00      0.87      0.70      0.93      0.78      0.62     17104
+      high_risk       0.09      0.92      0.94      0.16      0.93      0.87       101
+       low_risk       1.00      0.94      0.92      0.97      0.93      0.87     17104
     
-    avg / total       0.99      0.87      0.70      0.93      0.78      0.62     17205
+    avg / total       0.99      0.94      0.92      0.97      0.93      0.87     17205
     
     
 
 
 ## Summary:
 
-The SMOTEENN algorithm had the best balanced accuracy score at <>%
-The Smote oversampler had the best recall score at <>%
-The easy ensemble classifier had the best balanced accuracy score at <>%
-The easy ensemble classifier had the best recall score at <>%
-the easy ensemble classifier had the best geometric mean score at <>%.
+Out of the first four Over/Under sampler algorithms RandomOverSampler, SMOTE, ClusterCentroids, and SMOTEENN, the SMOTEENN algorithm had the best balanced accuracy score at 68.8% and the SMOTE oversampler had the best recall score at 69%
+
+From testing the BalancedRandomForestClassifier and EasyEnsembleClassifier algorithms, the easy ensemble classifier algorithm works best for this data set. The easy ensemble classifier had the best balanced accuracy score at 93% and the best recall score at 94%
